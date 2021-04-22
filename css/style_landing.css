@@ -1,0 +1,405 @@
+a:link {
+    color:rgb(245, 233, 199);
+    text-decoration: none;
+    }
+    a:visited {
+        color: rgb(245, 233, 199);
+        text-decoration: none;
+    }
+    a:hover{
+        color:rgb(99, 110, 123);
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: rgb(216, 66, 72);
+    }
+    .wrapper{
+        margin: 2vh 1vw;
+        /* padding: 50%; */
+    }
+    
+
+    .backgroundimage {
+        position: relative;
+        display: grid;
+        justify-content: center;
+    }
+
+    .backgroundimage img {
+        width: 100%;
+        max-width: 100%;
+        /* margin: -100px 0 0 -100px; */
+    }
+
+    h1 {
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background: rgba(0,0,0,0);
+        width: 600px;
+        margin-left: -300px;
+        text-align: center;
+        font-family: Canela;
+        font-size: 30px;
+        color: rgb(99, 110, 123);
+    }
+
+    h3 {
+        z-index: 1000;
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        background: rgba(0,0,0,0);
+        width: 300px;
+        margin-left: -150px;
+        text-align: center;
+        font-family: Canela;
+        font-size: 16px;
+        color: rgb(99, 110, 123);
+    }
+
+    h2 {
+        padding-right: 50%;
+        padding-bottom: 10%;
+        text-align: center;
+        font-family: Canela;
+        font-size: 20px;
+        color: rgb(245, 233, 199);
+    }
+    h4 {
+        z-index: 1000;
+        position: relative;
+        text-align: center;
+        font-family: Canela;
+        font-size: 20px;
+        color: rgb(245, 233, 199);
+        background: rgb(216, 66, 72);
+    }
+
+    h5 {
+        z-index: 1000;
+        position: relative;
+        text-align: left;
+        font-weight: 200;
+        font-family: Helvetica, sans-serif;
+        font-size: 16px;
+        color: rgb(245, 233, 199);
+    }
+    h6 {
+        z-index: 1000;
+        position: relative;
+        text-align: right;
+        font-family: Helvetica, sans-serif;
+        font-weight: 200;
+        padding: 3%;
+        padding-left: 18%;
+        width: 80%;
+        font-size: 16px;
+        color: rgb(245, 233, 199);
+    }
+
+    /* .module:hover {
+            background: #4a515e;
+            height: 300px;
+            padding-top: 20%;
+            
+        } */
+
+    .buttonimages {
+        z-index: 1;
+        position: fixed;
+        bottom: 0px;
+        padding-left: 16%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 0px;
+    }
+
+    .buttonimages img{
+            width: 40%;
+            max-width: 50%;
+            transition: 1s ease-in-out;
+    }
+
+    .buttonimages img:hover {
+        transform: scale(1.5);
+    }
+    .buttonimages img[src$= "1950s-1970s.png"] {
+        transform-origin: bottom right;
+    }	
+    
+    .buttonimages img[src$= "Present_Day.png"] {
+        transform-origin: bottom center;
+    }	
+    .buttonimages img[src$= "The Future.png"] {
+        transform-origin: bottom left;
+    }		
+
+    .nav {
+        position: relative;
+        padding: 3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: rgb(216, 66, 72);
+    }
+
+    .dropdown{
+        position:relative;
+        display: inline-block;
+        background: rgb(216, 66, 72);
+
+    }
+    .dropdown h4{
+        background: rgb(216, 66, 72, 0);
+    }
+    .dropdown h4:hover {
+        color:rgb(99, 110, 123);
+    }
+    .dropcontent{
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        background: rgb(216, 66, 72);
+        padding: 10%;
+        width: 100px;
+        right: 40px;
+    }
+
+    .dropcontent .audiocontent{
+        display: block;
+    }
+
+    .dropcontent .audiocontent:hover{
+        background-color: rgb(216, 66, 72);
+    }
+
+    .dropcontent h5{
+        display: block;
+    }
+    .dropcontent h5:hover {
+        background-color: rgb(216, 66, 72);
+    }
+    .dropdown:hover .dropcontent {
+        display: block;
+    }
+    .dropdown:hover .h5 {
+        background-color: rgb(216, 66, 72);
+    }
+
+    .dropdown:hover .audiocontent {
+        background-color: rgb(216, 66, 72);
+    }
+
+    
+
+    @media only screen and (min-width: 1000px) {
+        /* .grid{
+        display: grid;
+        grid-template-columns: 0fr, 0fr;
+        grid-template-rows: 50px auto 50px;
+        grid-template-areas: 
+        
+        'backgroundimage'
+        'module'
+        } */
+
+        .wrapper{
+            margin: 2vh 1vw;
+            /* padding: 50%; */
+        }
+
+        .backgroundimage {
+            position: relative;
+            display: grid;
+            justify-content: center;
+
+            height: 45vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .backgroundimage img {
+            padding-left: 5%;
+            width: 100%;
+            max-width: 90%;
+            /* margin: -100px 0 0 -100px; */
+        }
+
+        h1 {
+            z-index: 1000;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            background: rgba(0,0,0,0);
+            width: 600px;
+            margin-left: -300px;
+            text-align: center;
+            font-family: Canela;
+            font-size: 45px;
+            color: rgb(99, 110, 123);
+        }
+
+        h3 {
+            z-index: 1000;
+            position: absolute;
+            top: 65px;
+            left: 50%;
+            background: rgba(0,0,0,0);
+            width: 300px;
+            margin-left: -150px;
+            text-align: center;
+            font-family: Canela;
+            font-size: 20px;
+            color: rgb(99, 110, 123);
+        }
+
+        h2 {
+            padding-right: 50%;
+            padding-bottom: 10%;
+            text-align: center;
+            font-family: Canela;
+            font-size: 20px;
+            color: rgb(245, 233, 199);
+        }
+
+        h4 {
+            z-index: 1000;
+            position: relative;
+            text-align: center;
+            font-family: Canela;
+            font-size: 20px;
+            color: rgb(245, 233, 199);
+            background-color: rgb(216, 66, 72);
+        }
+        
+        h5 {
+            z-index: 1000;
+            position: relative;
+            text-align: left;
+            font-weight: 200;
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            color: rgb(245, 233, 199);
+        }
+
+        .h7{				
+            z-index: 1000;
+            position: relative;
+            text-align: left;
+            font-weight: 200;
+            font-style: italic;
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            color: rgb(245, 233, 199);
+        }
+        
+        h6 {
+            z-index: 1000;
+            position: relative;
+            text-align: right;
+            font-family: Helvetica, sans-serif;
+            font-weight: 200;
+            padding: 3%;
+            padding-left: 18%;
+            width: 80%;
+            font-size: 16px;
+            color: rgb(245, 233, 199);
+        }
+        /* .module:hover {
+            background: #4a515e;
+            height: 300px;
+            
+        } */
+
+        .buttonimages {
+            z-index: 1;
+            position: fixed;
+            bottom: 5px;
+            padding-left: 23%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 15px;
+        }
+
+        .buttonimages img{
+            width: 40%;
+            max-width: 50%;
+            transition: 1s ease-in-out;
+        }
+
+        .buttonimages img:hover {
+            transform: scale(1.5);
+        }
+        .buttonimages img[src$= "1950s-1970s.png"] {
+            transform-origin: bottom right;
+        }	
+        
+        .buttonimages img[src$= "Present_Day.png"] {
+            transform-origin: bottom center;
+        }	
+        .buttonimages img[src$= "The Future.png"] {
+            transform-origin: bottom left;
+        }	
+
+        .nav {
+            position: relative;
+            padding: 3%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: rgb(216, 66, 72);
+        }
+
+            position:relative;
+            display: inline-block;
+            /* background: rgb(216, 66, 72); */
+
+        }
+        .dropdown h4{
+            background: rgb(216, 66, 72);
+        }
+        .dropdown h4:hover {
+            color:rgb(99, 110, 123);
+        }
+        .dropcontent{
+            display: none;
+            position: absolute;
+            z-index: 1000;
+            background: rgb(216, 66, 72);
+            padding: 10%;
+            width: 300px;
+            right: 20px;
+        }
+
+        .dropcontent .audiocontent{
+            display: block;
+        }
+
+        .dropcontent .audiocontent:hover{
+            background-color: rgb(216, 66, 72);
+        }
+
+        .dropcontent h5{
+            display: block;
+        }
+        .dropcontent h5:hover {
+            background-color: rgb(216, 66, 72);
+        }
+        .dropdown:hover .dropcontent {
+            display: block;
+        }
+        .dropdown:hover .h5 {
+            background-color: rgb(216, 66, 72);
+        }
+
+        .dropdown:hover .audiocontent {
+            background-color: rgb(216, 66, 72);
+        }

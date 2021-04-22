@@ -1,0 +1,420 @@
+a:link {
+    color:rgb(245, 233, 199);
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(245, 233, 199);
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(99, 110, 123);
+}
+
+* {	
+margin: 0;
+padding: 0;
+
+}body {
+    background-color: rgb(216, 66, 72);
+}
+.wrapper{
+    margin: 2vh 1vw;
+}
+
+.splide__list {
+
+position: absolute;
+height: 100vh;
+/* background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+align-items: center; */
+
+display: grid;
+/* grid-template-columns: 1fr 1fr 1fr; */
+grid-template-rows: auto;
+grid-gap: 5px;
+justify-content: center;
+}
+
+.splide__list img {
+padding-right: 50%;
+width: 100%;
+max-width: 100%;
+/* margin: -100px 0 0 -100px; */
+}
+
+h1 {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: rgba(0,0,0,0);
+    width: 600px;
+    margin-left: -300px;
+    text-align: center;
+    font-family: Canela;
+    font-size: 30px;
+    color: rgb(99, 110, 123);
+}
+
+h3 {
+    z-index: 1000;
+    position: absolute;
+    top: 65px;
+    left: 55%;
+    width: 300px;
+    margin-left: -150px;
+    text-align: center;
+    font-family: Canela;
+    font-size: 20px;
+    color: rgb(99, 110, 123);
+    background:rgb(245, 233, 199);
+    }
+
+h2 {
+    padding-right: 30%;
+    justify-content: center;
+    text-align: center;
+    font-family: Canela;
+    font-size: 20px;
+    color: rgb(245, 233, 199);
+    background-color:rgb(216, 66, 72);
+    width: 5px;
+}
+h4 {
+    text-align: center;
+    font-family: Canela;
+    font-size: 20px;
+    color: rgb(245, 233, 199);
+}
+h5 {
+        z-index: 1000;
+        position: relative;
+        text-align: left;
+        font-family: value sans, sans-serif;
+        font-weight: 200;
+        font-size: 16px;
+        color: rgb(245, 233, 199);
+    }
+
+h6 {
+    z-index: 1000;
+    position: relative;
+    text-align: right;
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    padding: 3%;
+    padding-left: 28%;
+    width: 70%;
+    font-size: 16px;
+    color: rgb(245, 233, 199);
+}
+/* .splide__list .h6 {
+    z-index: 2000;
+    position: absolute;
+    width: 100px;
+    padding-right: 100%;
+    font-family: Canela;
+    color: rgb(99, 110, 123);
+    background:rgb(245, 233, 199);
+} */
+.buttonimages {
+    /* background:rgb(216, 66, 72); */
+    z-index: 5000;
+    position: fixed;
+    padding-left: 0%;
+    padding: 3%;
+    top: 70px;
+    left: 5px;
+    display: grid;
+    /* grid-template-columns: auto; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+.buttonimages img{
+        width: 40%;
+        max-width: 30%;
+        transition: 1s ease-in-out;
+    }
+
+.buttonimages img:hover {
+    transform: scale(1.5);
+}
+.buttonimages img[src$= "1950s-1970s.png"] {
+    transform-origin: left; 
+}	
+
+.buttonimages img[src$= "Present_Day.png"] {
+    transform-origin: left;
+}	
+.buttonimages img[src$= "The Future.png"] {
+    transform-origin: left;
+}
+
+.nav {
+    z-index: 4000;
+    position: sticky;
+    height: 50px;
+    top: 0px;
+    right: 40px;
+    background-color:rgb(216, 66, 72);
+    padding: 1%;
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+}
+
+.dropdown{
+    position:relative;
+    display: inline-block;
+
+}
+.dropdown h4{
+    background: rgb(216, 66, 72, 0);
+}
+.dropdown h4:hover {
+    color:rgb(99, 110, 123);
+}
+.dropcontent{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background: rgb(216, 66, 72);
+    padding: 10%;
+    width: 300px;
+    right: 10px;
+}
+
+.dropcontent .audiocontent{
+    display: block;
+}
+
+.dropcontent .audiocontent:hover{
+    background-color: rgb(216, 66, 72);
+}
+
+.dropcontent h5{
+    display: block;
+}
+.dropcontent h5:hover {
+    background-color: rgb(216, 66, 72);
+}
+.dropdown:hover .dropcontent {
+    display: block;
+}
+.dropdown:hover .h5 {
+    background-color: rgb(216, 66, 72);
+}
+
+.dropdown:hover .audiocontent {
+    background-color: rgb(216, 66, 72);
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+
+
+    .splide__list {
+
+        position: absolute;
+        height: 100vh;
+        /* background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center; */
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        justify-content: center;
+
+    }
+
+    .splide__list img {
+        padding-left: 10%;
+        width: 100%;
+        max-width: 90%;
+        /* margin: -100px 0 0 -100px; */
+    }
+
+    h1 {
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background: rgba(0,0,0,0);
+        width: 600px;
+        margin-left: -300px;
+        text-align: center;
+        font-family: Canela;
+        font-size: 45px;
+        color: rgb(99, 110, 123);
+    }
+
+    h3 {
+        z-index: 1000;
+        position: absolute;
+        top: 65px;
+        left: 55%;
+        width: 300px;
+        margin-left: -150px;
+        text-align: center;
+        font-family: Canela;
+        font-size: 20px;
+        color: rgb(99, 110, 123);
+        background:rgb(245, 233, 199);
+    }
+
+    h2 {
+        padding-right: 30%;
+        justify-content: center;
+        text-align: center;
+        font-family: Canela;
+        font-size: 20px;
+        color: rgb(245, 233, 199);
+        background-color:rgb(216, 66, 72);
+        width: 5px;
+    }
+
+    h4 {
+        z-index: 1000;
+        position: absolute
+        text-align: center;
+        font-family: Canela;
+        font-size: 20px;
+        color: rgb(245, 233, 199);
+    }
+    h5 {
+        z-index: 1000;
+        position: relative;
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        font-size: 16px;
+        color: rgb(245, 233, 199);
+    }
+    h6 {
+        z-index: 1000;
+        position: relative;
+        text-align: right;
+        font-family: Helvetica, sans-serif;
+        font-weight: 200;
+        padding: 3%;
+        padding-left: 18%;
+        width: 80%;
+        font-size: 16px;
+        color: rgb(245, 233, 199);
+    }
+
+    .buttonimages {
+        /* background:rgb(216, 66, 72); */
+        z-index: 5000;
+        top: 45px;
+        display: grid;
+        grid-template-columns: auto
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        justify-content: center;
+    }
+
+    .buttonimages img{
+        width: 40%;
+        max-width: 50%;
+        transition: 1s ease-in-out;
+    }
+    .buttonimages img:hover {
+        transform: scale(1.5);
+    }
+    .buttonimages img[src$= "1950s-1970s.png"] {
+        transform-origin: left; 
+    }	
+    
+    .buttonimages img[src$= "Present_Day.png"] {
+        transform-origin: left;
+    }	
+    .buttonimages img[src$= "The Future.png"] {
+        transform-origin: left;
+    }	
+
+    .nav {
+        z-index: 4000;
+        position: sticky;
+        height: 50px;
+        top: 0px;
+        background-color:rgb(216, 66, 72);
+        padding: 1%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .dropdown{
+        position:relative;
+        display: inline-block;
+
+    }
+    .dropdown h4{
+        background: rgb(216, 66, 72, 0);
+    }
+    .dropdown h4:hover {
+        color:rgb(99, 110, 123);
+    }
+    .dropcontent{
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        background: rgb(216, 66, 72);
+        padding: 10%;
+        width: 300px;
+        right: 20px;
+    }
+
+
+    .dropcontent .audiocontent{
+        display: block;
+    }
+    
+    .dropcontent .audiocontent:hover{
+        background-color: rgb(216, 66, 72);
+    }
+    
+    .dropcontent h5{
+        display: block;
+    }
+    .dropcontent h5:hover {
+        background-color: rgb(216, 66, 72);
+    }
+    .dropdown:hover .dropcontent {
+        display: block;
+    }
+    .dropdown:hover .h5 {
+        background-color: rgb(216, 66, 72);
+    }
+    
+    .dropdown:hover .audiocontent {
+        background-color: rgb(216, 66, 72);
+    }
+
+    #mydiv {
+        position: absolute;
+        z-index: 9000;
+        background-color: #f1f1f1;
+        border: 1px solid #d3d3d3;
+        text-align: center;
+      }
+      
+    #mydivheader {
+        padding: 10px;
+        cursor: move;
+        z-index: 10000;
+        background-color: #2196F3;
+        color: #fff;
+      }
+
+}
